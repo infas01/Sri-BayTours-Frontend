@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "Nimal Perera",
+    "photo": "/images/drivers/driver-1.jpg",
+    "vehicleType": "Car",
+    "vehicleModel": "Toyota Axio",
+    "vehicleNumber": "CAR-1234",
+    "capacity": 4,
+    "location": "Colombo",
+    "pricePerDay": "USD 50",
+    "languages": ["English", "Sinhala", "Tamil"],
+    "rating": 4.8,
+    "experience": "10 years",
+    "description": "Experienced driver with extensive knowledge of tourist destinations across Sri Lanka.",
+    "features": [
+      "AC Vehicle",
+      "WiFi Available",
+      "Child seat available",
+      "First aid kit"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Kamal Silva",
+    "photo": "/images/drivers/driver-2.jpg",
+    "vehicleType": "Van",
+    "vehicleModel": "Toyota KDH",
+    "vehicleNumber": "VAN-5678",
+    "capacity": 12,
+    "location": "Kandy",
+    "pricePerDay": "USD 80",
+    "languages": ["English", "Sinhala", "German"],
+    "rating": 4.9,
+    "experience": "15 years",
+    "description": "Professional tour guide and driver specializing in group tours and cultural experiences.",
+    "features": [
+      "AC Vehicle",
+      "WiFi Available",
+      "Entertainment system",
+      "Cooler box"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Ruwan Fernando",
+    "photo": "/images/drivers/driver-3.jpg",
+    "vehicleType": "Tuk-Tuk",
+    "vehicleModel": "Bajaj RE",
+    "vehicleNumber": "TUK-9012",
+    "capacity": 3,
+    "location": "Galle",
+    "pricePerDay": "USD 25",
+    "languages": ["English", "Sinhala"],
+    "rating": 4.7,
+    "experience": "7 years",
+    "description": "Fun and friendly tuk-tuk driver perfect for short trips and local exploration.",
+    "features": [
+      "Budget friendly",
+      "Local expertise",
+      "Flexible routes",
+      "Photo stops"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Sunil Bandara",
+    "photo": "/images/drivers/driver-4.jpg",
+    "vehicleType": "Car",
+    "vehicleModel": "Honda Civic",
+    "vehicleNumber": "CAR-3456",
+    "capacity": 4,
+    "location": "Negombo",
+    "pricePerDay": "USD 55",
+    "languages": ["English", "Sinhala", "French"],
+    "rating": 4.6,
+    "experience": "12 years",
+    "description": "Reliable driver with excellent knowledge of coastal areas and beach destinations.",
+    "features": [
+      "AC Vehicle",
+      "Bluetooth audio",
+      "Beach equipment storage",
+      "Snorkeling gear"
+    ]
+  }
+]

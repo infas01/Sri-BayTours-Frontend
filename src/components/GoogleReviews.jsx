@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion'
-import { FaStar } from 'react-icons/fa'
+import { motion } from 'framer-motion';
+import { FaStar } from 'react-icons/fa';
 
 export default function GoogleReviews() {
   // Sample reviews - Replace with actual Google Reviews when available
@@ -9,25 +9,31 @@ export default function GoogleReviews() {
     {
       name: 'Sarah Johnson',
       rating: 5,
-      comment: 'Absolutely fantastic service! The driver was punctual, professional, and very knowledgeable about the local attractions. Highly recommend Sri\'BayTours!',
+      comment:
+        "Absolutely fantastic service! The driver was punctual, professional, and very knowledgeable about the local attractions. Highly recommend Sri'BayTours!",
       date: '2 weeks ago',
-      avatar: 'https://ui-avatars.com/api/?name=Sarah+Johnson&background=4a90e2&color=fff',
+      avatar:
+        'https://ui-avatars.com/api/?name=Sarah+Johnson&background=4a90e2&color=fff',
     },
     {
       name: 'Michael Chen',
       rating: 5,
-      comment: 'Best tour experience in Sri Lanka! The vehicle was clean and comfortable. Our guide showed us hidden gems we would never have found on our own.',
+      comment:
+        'Best tour experience in Sri Lanka! The vehicle was clean and comfortable. Our guide showed us hidden gems we would never have found on our own.',
       date: '1 month ago',
-      avatar: 'https://ui-avatars.com/api/?name=Michael+Chen&background=d4a574&color=fff',
+      avatar:
+        'https://ui-avatars.com/api/?name=Michael+Chen&background=d4a574&color=fff',
     },
     {
       name: 'Emma Williams',
       rating: 5,
-      comment: 'Exceptional service from start to finish. The booking process was easy, and the tour exceeded all our expectations. Will definitely use again!',
+      comment:
+        'Exceptional service from start to finish. The booking process was easy, and the tour exceeded all our expectations. Will definitely use again!',
       date: '3 weeks ago',
-      avatar: 'https://ui-avatars.com/api/?name=Emma+Williams&background=5eb3d6&color=fff',
+      avatar:
+        'https://ui-avatars.com/api/?name=Emma+Williams&background=5eb3d6&color=fff',
     },
-  ]
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -37,7 +43,7 @@ export default function GoogleReviews() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -48,7 +54,7 @@ export default function GoogleReviews() {
         duration: 0.6,
       },
     },
-  }
+  };
 
   return (
     <section className="py-20 bg-gray-50">
@@ -100,7 +106,7 @@ export default function GoogleReviews() {
         </motion.div>
 
         {/* Placeholder for Google Reviews Embed */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -110,15 +116,14 @@ export default function GoogleReviews() {
           <p className="text-gray-600 mb-4">
             Connected to Google Reviews - Add your Place ID in the component to display live reviews
           </p>
-          {/* Replace this div with actual Google Reviews embed code */}
           <div className="border-2 border-dashed border-gray-300 rounded-lg p-8">
             <p className="text-gray-500">Google Reviews Widget Placeholder</p>
             <p className="text-sm text-gray-400 mt-2">
               To enable: Add your Google Business Place ID
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
-  )
+  );
 }

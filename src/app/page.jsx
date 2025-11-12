@@ -68,7 +68,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&q=80"
+                src="https://images.unsplash.com/photo-1612862862126-865765df2ded?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Sri Lanka Beach"
                 width={600}
                 height={400}

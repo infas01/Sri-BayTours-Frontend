@@ -1,32 +1,36 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { FaHeart, FaUsers, FaAward, FaLeaf } from 'react-icons/fa'
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { FaHeart, FaUsers, FaAward, FaLeaf } from 'react-icons/fa';
 
 export default function About() {
   const values = [
     {
       icon: <FaHeart />,
       title: 'Passion for Service',
-      description: 'We are passionate about showcasing the beauty of Sri Lanka and ensuring every guest has an unforgettable experience.',
+      description:
+        'We are passionate about showcasing the beauty of Sri Lanka and ensuring every guest has an unforgettable experience.',
     },
     {
       icon: <FaUsers />,
       title: 'Customer-Centric',
-      description: 'Your satisfaction is our priority. We go above and beyond to meet your needs and exceed your expectations.',
+      description:
+        'Your satisfaction is our priority. We go above and beyond to meet your needs and exceed your expectations.',
     },
     {
       icon: <FaAward />,
       title: 'Excellence',
-      description: 'We maintain the highest standards in service quality, vehicle maintenance, and professional conduct.',
+      description:
+        'We maintain the highest standards in service quality, vehicle maintenance, and professional conduct.',
     },
     {
       icon: <FaLeaf />,
       title: 'Sustainability',
-      description: 'We are committed to responsible tourism and preserving Sri Lanka\'s natural beauty for future generations.',
+      description:
+        "We are committed to responsible tourism and preserving Sri Lanka's natural beauty for future generations.",
     },
-  ]
+  ];
 
   return (
     <div className="pt-24">
@@ -47,7 +51,9 @@ export default function About() {
           className="relative z-10 text-center text-white px-4"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-4">About Us</h1>
-          <p className="text-xl md:text-2xl">Your Gateway to Sri Lankan Adventures</p>
+          <p className="text-xl md:text-2xl">
+            Your Gateway to Sri Lankan Adventures
+          </p>
         </motion.div>
       </section>
 
@@ -61,15 +67,30 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl font-bold text-primary-navy mb-6">Our Story</h2>
+              <h2 className="text-4xl font-bold text-primary-navy mb-6">
+                Our Story
+              </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Sri'BayTours was born from a deep love for Sri Lanka and a passion for sharing its wonders with the world. Founded in the beautiful coastal town of Pottuvil, we started with a simple mission: to provide travelers with authentic, comfortable, and memorable experiences across this magnificent island nation.
+                Sri'BayTours was born from a deep love for Sri Lanka and a
+                passion for sharing its wonders with the world. Founded in the
+                beautiful coastal town of Pottuvil, we started with a simple
+                mission: to provide travelers with authentic, comfortable, and
+                memorable experiences across this magnificent island nation.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                What began as a small taxi service has evolved into a comprehensive tour operation, offering everything from airport transfers to multi-day cultural expeditions. Our team of experienced drivers and guides are not just professionals – they're passionate locals who know every hidden beach, ancient temple, and scenic viewpoint across Sri Lanka.
+                What began as a small taxi service has evolved into a
+                comprehensive tour operation, offering everything from airport
+                transfers to multi-day cultural expeditions. Our team of
+                experienced drivers and guides are not just professionals –
+                they're passionate locals who know every hidden beach, ancient
+                temple, and scenic viewpoint across Sri Lanka.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Today, we're proud to be one of the most trusted tour operators in the Eastern Province, having served thousands of happy customers from around the globe. Every journey we facilitate is an opportunity to showcase Sri Lankan hospitality and create lasting memories.
+                Today, we're proud to be one of the most trusted tour operators
+                in the Eastern Province, having served thousands of happy
+                customers from around the globe. Every journey we facilitate is
+                an opportunity to showcase Sri Lankan hospitality and create
+                lasting memories.
               </p>
             </motion.div>
             <motion.div
@@ -101,7 +122,7 @@ export default function About() {
                 className="rounded-xl shadow-lg w-full h-64 object-cover"
               />
               <Image
-                src="https://images.unsplash.com/photo-1578193661550-c7d0b7b3aa55?w=800&q=80"
+                src="https://images.unsplash.com/photo-1719807633728-7ff13f7f2b61?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
                 alt="Sri Lanka Wildlife"
                 width={300}
                 height={300}
@@ -163,9 +184,15 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="card p-10"
             >
-              <h3 className="text-3xl font-bold text-primary-navy mb-6">Our Mission</h3>
+              <h3 className="text-3xl font-bold text-primary-navy mb-6">
+                Our Mission
+              </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                To provide exceptional transportation and tour services that showcase the authentic beauty of Sri Lanka, while delivering comfort, safety, and unforgettable experiences to every traveler. We strive to be the bridge between curious explorers and the hidden gems of our beloved island.
+                To provide exceptional transportation and tour services that
+                showcase the authentic beauty of Sri Lanka, while delivering
+                comfort, safety, and unforgettable experiences to every
+                traveler. We strive to be the bridge between curious explorers
+                and the hidden gems of our beloved island.
               </p>
             </motion.div>
             <motion.div
@@ -175,9 +202,16 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="card p-10"
             >
-              <h3 className="text-3xl font-bold text-primary-navy mb-6">Our Vision</h3>
+              <h3 className="text-3xl font-bold text-primary-navy mb-6">
+                Our Vision
+              </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                To become Sri Lanka's most trusted and beloved tour operator, recognized for our commitment to excellence, sustainable tourism, and authentic cultural experiences. We envision a future where every visitor leaves with not just photographs, but cherished memories and a deep appreciation for Sri Lankan culture and nature.
+                To become Sri Lanka's most trusted and beloved tour operator,
+                recognized for our commitment to excellence, sustainable
+                tourism, and authentic cultural experiences. We envision a
+                future where every visitor leaves with not just photographs, but
+                cherished memories and a deep appreciation for Sri Lankan
+                culture and nature.
               </p>
             </motion.div>
           </div>
@@ -193,9 +227,12 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl font-bold mb-6">Let's Create Memories Together</h2>
+            <h2 className="text-4xl font-bold mb-6">
+              Let's Create Memories Together
+            </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Join thousands of satisfied travelers who have explored Sri Lanka with us
+              Join thousands of satisfied travelers who have explored Sri Lanka
+              with us
             </p>
             <a href="/reserve-a-ride">
               <button className="btn-primary text-lg px-10 py-4">
@@ -206,5 +243,5 @@ export default function About() {
         </div>
       </section>
     </div>
-  )
+  );
 }

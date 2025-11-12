@@ -1,45 +1,50 @@
-'use client'
+'use client';
 
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 export default function ImageCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80',
+      image:
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80',
       title: "Welcome to Sri'BayTours",
       subtitle: 'Explore the Pearl of the Indian Ocean',
     },
     {
-      image: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1920&q=80',
+      image:
+        'https://images.unsplash.com/photo-1721462893612-2e65493f28fb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWRhbXMlMjBwZWFrfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000',
       title: 'Discover Paradise',
       subtitle: 'Experience the beauty of Sri Lanka',
     },
     {
-      image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1920&q=80',
+      image:
+        'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1920&q=80',
       title: 'Your Journey Begins',
       subtitle: 'Premium taxi and tour services',
     },
-  ]
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [slides.length])
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
 
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length)
-  }
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
+  };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-  }
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  };
 
   return (
     <div className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
@@ -127,5 +132,5 @@ export default function ImageCarousel() {
         ))}
       </div>
     </div>
-  )
+  );
 }

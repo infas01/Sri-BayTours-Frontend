@@ -11,7 +11,7 @@ export default function ExploreSriLanka() {
       description:
         'An ancient rock fortress and palace ruins surrounded by lush gardens. This UNESCO World Heritage Site features remarkable frescoes and offers breathtaking panoramic views.',
       image:
-        'https://images.unsplash.com/photo-1591696331096-c6b0f0498c8f?w=800&q=80',
+        'https://images.unsplash.com/photo-1612862862126-865765df2ded?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074',
       location: 'Central Province',
     },
     {
@@ -19,7 +19,7 @@ export default function ExploreSriLanka() {
       description:
         'A charming mountain village nestled in the highlands, famous for scenic train rides, tea plantations, hiking trails, and the iconic Nine Arch Bridge.',
       image:
-        'https://images.unsplash.com/photo-1608054825597-5c2836b8c19d?w=800&q=80',
+        'https://images.unsplash.com/photo-1566766189268-ecac9118f2b7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170',
       location: 'Uva Province',
     },
     {
@@ -27,7 +27,7 @@ export default function ExploreSriLanka() {
       description:
         'A beautifully preserved colonial fortress with cobblestone streets, Dutch architecture, charming cafes, and stunning ocean views along the ramparts.',
       image:
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+        'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170',
       location: 'Southern Province',
     },
     {
@@ -35,7 +35,7 @@ export default function ExploreSriLanka() {
       description:
         'A pristine tropical paradise perfect for whale watching, surfing, and relaxation. Known for its golden sands, turquoise waters, and vibrant nightlife.',
       image:
-        'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&q=80',
+        'https://images.unsplash.com/photo-1580910527739-556eb89f9d65?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074',
       location: 'Southern Province',
     },
     {
@@ -43,7 +43,7 @@ export default function ExploreSriLanka() {
       description:
         "Sri Lanka's most visited wildlife sanctuary, home to leopards, elephants, sloth bears, and diverse bird species in stunning natural landscapes.",
       image:
-        'https://images.unsplash.com/photo-1578193661550-c7d0b7b3aa55?w=800&q=80',
+        'https://images.unsplash.com/photo-1621847473222-d85c022cbf07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1325',
       location: 'Southern Province',
     },
     {
@@ -51,7 +51,7 @@ export default function ExploreSriLanka() {
       description:
         "A sacred Buddhist temple in Kandy housing a relic of Buddha's tooth. This UNESCO site is a major pilgrimage destination with rich cultural significance.",
       image:
-        'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80',
+        'https://images.unsplash.com/photo-1665849050332-8d5d7e59afb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       location: 'Kandy',
     },
     {
@@ -59,7 +59,7 @@ export default function ExploreSriLanka() {
       description:
         'A world-renowned surfing destination on the east coast, offering perfect waves, laid-back atmosphere, and pristine beaches for all skill levels.',
       image:
-        'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80',
+        'https://images.unsplash.com/photo-1552055568-f8c4fb8c6320?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       location: 'Eastern Province',
     },
     {
@@ -67,7 +67,7 @@ export default function ExploreSriLanka() {
       description:
         'Known as "Little England," this hill station features cool climate, colonial architecture, sprawling tea estates, and beautiful botanical gardens.',
       image:
-        'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=800&q=80',
+        'https://images.unsplash.com/photo-1708338914870-797de586672d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332',
       location: 'Central Province',
     },
     {
@@ -75,7 +75,7 @@ export default function ExploreSriLanka() {
       description:
         'Ancient capital city featuring well-preserved ruins of palaces, temples, and massive stone Buddha statues from the 11th century.',
       image:
-        'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=800&q=80',
+        'https://images.unsplash.com/photo-1709729519591-2fb2d25395df?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=765',
       location: 'North Central Province',
     },
     {
@@ -83,7 +83,7 @@ export default function ExploreSriLanka() {
       description:
         'A complex of five cave temples containing over 150 Buddha statues and extensive cave paintings, offering spiritual and historical insights.',
       image:
-        'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80',
+        'https://images.unsplash.com/photo-1704798690646-92524b61ce03?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       location: 'Central Province',
     },
     {
@@ -91,7 +91,7 @@ export default function ExploreSriLanka() {
       description:
         'A crescent-shaped beach with calm waters perfect for swimming and snorkeling. Lined with restaurants, bars, and water sports facilities.',
       image:
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
+        'https://images.unsplash.com/photo-1665765415963-28b2fa36df8a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170',
       location: 'Southern Province',
     },
     {
@@ -99,7 +99,7 @@ export default function ExploreSriLanka() {
       description:
         'A sacred mountain pilgrimage site featuring a challenging night hike rewarded with spectacular sunrise views and spiritual significance for multiple religions.',
       image:
-        'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+        'https://images.unsplash.com/photo-1593983913587-361576add259?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074',
       location: 'Sabaragamuwa Province',
     },
   ];

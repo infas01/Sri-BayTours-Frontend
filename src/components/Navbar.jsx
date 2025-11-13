@@ -3,12 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,14 @@ export default function Navbar() {
     { name: 'About Us', href: '/about' },
     { name: 'Contact Us', href: '/contact' },
   ];
+
+  // Check if the current path matches the link
+  const isActive = (href) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav
@@ -67,10 +77,18 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className="text-gray-700 hover:text-primary-ocean font-medium transition-colors duration-300 relative group"
+                  className={`font-medium transition-colors duration-300 relative group ${
+                    isActive(link.href)
+                      ? 'text-primary-ocean'
+                      : 'text-gray-700 hover:text-primary-ocean'
+                  }`}
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-ocean transition-all duration-300 group-hover:w-full"></span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-0.5 bg-primary-ocean transition-all duration-300 ${
+                      isActive(link.href) ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                  ></span>
                 </Link>
               </motion.div>
             ))}
@@ -80,7 +98,15 @@ export default function Navbar() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <Link href="/reserve-a-ride">
-                <button className="btn-primary">Reserve a Ride</button>
+                <button
+                  className={`transition-all duration-300 font-semibold py-3 px-6 rounded-lg shadow-lg ${
+                    isActive('/reserve-a-ride')
+                      ? 'bg-primary-gold/90 text-white scale-105'
+                      : 'btn-primary'
+                  }`}
+                >
+                  Reserve a Ride
+                </button>
               </Link>
             </motion.div>
           </div>
@@ -107,14 +133,24 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="block py-3 text-gray-700 hover:text-primary-ocean font-medium transition-colors duration-300 border-b border-gray-200"
+                className={`block py-3 font-medium transition-colors duration-300 border-b border-gray-200 ${
+                  isActive(link.href)
+                    ? 'text-primary-ocean bg-primary-ocean/5 px-3 rounded-lg border-l-4 border-primary-ocean'
+                    : 'text-gray-700 hover:text-primary-ocean'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
             <Link href="/reserve-a-ride" onClick={() => setIsOpen(false)}>
-              <button className="btn-primary w-full mt-4">
+              <button
+                className={`w-full mt-4 transition-all duration-300 font-semibold py-3 px-6 rounded-lg shadow-lg ${
+                  isActive('/reserve-a-ride')
+                    ? 'bg-primary-gold/90 text-white'
+                    : 'btn-primary'
+                }`}
+              >
                 Reserve a Ride
               </button>
             </Link>

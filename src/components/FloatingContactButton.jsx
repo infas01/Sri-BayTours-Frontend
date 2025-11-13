@@ -17,7 +17,7 @@ export default function FloatingContactButton() {
     {
       icon: <FaWhatsapp />,
       label: 'WhatsApp',
-      href: `https://wa.me/94762726459`,
+      href: `https://wa.me/94756877595`,
       color: 'bg-green-500 hover:bg-green-600',
     },
     {

@@ -161,7 +161,7 @@ export default function Contact() {
                       href="tel:+94756877595"
                       className="text-gray-600 hover:text-primary-ocean transition-colors"
                     >
-                      +94 76 272 6459
+                      +94 75 687 7595
                     </a>
                   </div>
                 </motion.div>

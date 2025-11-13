@@ -119,7 +119,7 @@ export default function Footer() {
                   href="tel:+94756877595"
                   className="text-gray-300 hover:text-primary-ocean transition-colors text-sm"
                 >
-                  +94 76 272 6459
+                  +94 75 687 7595
                 </a>
               </li>
               <li className="flex items-center space-x-3">

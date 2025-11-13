@@ -37,7 +37,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full z-[100] transition-all duration-300 ${
         scrolled
           ? 'bg-white shadow-lg py-2'
           : 'bg-white/95 backdrop-blur-sm py-4'
@@ -47,12 +47,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="flex items-center"
-            >
+            <div className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Sri'BayTours Logo"
@@ -60,21 +55,16 @@ export default function Navbar() {
                 height={60}
                 className="cursor-pointer transition-transform duration-300 hover:scale-110"
               />
-              <span className="ml-3 text-2xl font-bold text-primary-navy hidden sm:block">
+              <span className="ml-3 text-2xl font-bold text-primary-navy block">
                 Sri'BayTours
               </span>
-            </motion.div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link, index) => (
-              <motion.div
-                key={link.name}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
+            {navLinks.map((link) => (
+              <div key={link.name}>
                 <Link
                   href={link.href}
                   className={`font-medium transition-colors duration-300 relative group ${
@@ -84,19 +74,15 @@ export default function Navbar() {
                   }`}
                 >
                   {link.name}
-                  <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-primary-ocean transition-all duration-300 ${
-                      isActive(link.href) ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}
-                  ></span>
+                  {/* Underline only shows on hover for non-active links */}
+                  {!isActive(link.href) && (
+                    <span className="absolute bottom-0 left-0 h-0.5 bg-primary-ocean transition-all duration-300 w-0 group-hover:w-full"></span>
+                  )}
                 </Link>
-              </motion.div>
+              </div>
             ))}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
+
+            <div>
               <Link href="/reserve-a-ride">
                 <button
                   className={`transition-all duration-300 font-semibold py-3 px-6 rounded-lg shadow-lg ${
@@ -108,13 +94,14 @@ export default function Navbar() {
                   Reserve a Ride
                 </button>
               </Link>
-            </motion.div>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             className="lg:hidden text-2xl text-primary-navy sm:mr-5 mr-10"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
           >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
@@ -133,10 +120,10 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`block py-3 font-medium transition-colors duration-300 border-b border-gray-200 ${
+                className={`block py-3 px-4 font-medium transition-colors duration-300 border-b border-gray-200 ${
                   isActive(link.href)
-                    ? 'text-primary-ocean bg-primary-ocean/5 px-3 rounded-lg border-l-4 border-primary-ocean'
-                    : 'text-gray-700 hover:text-primary-ocean'
+                    ? 'text-primary-ocean bg-primary-ocean/5 rounded-lg border-l-4 border-primary-ocean'
+                    : 'text-gray-700 hover:text-primary-ocean hover:bg-gray-50 rounded-lg'
                 }`}
                 onClick={() => setIsOpen(false)}
               >

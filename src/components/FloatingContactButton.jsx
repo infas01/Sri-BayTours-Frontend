@@ -23,13 +23,13 @@ export default function FloatingContactButton() {
     {
       icon: <FaEnvelope />,
       label: 'Email',
-      href: 'mailto:infas1002@gmail.com',
+      href: 'mailto:app@test.com',
       color: 'bg-red-500 hover:bg-red-600',
     },
     {
       icon: <FaPhone />,
       label: 'Phone',
-      href: 'tel:+94762726459',
+      href: 'tel:+94756877595',
       color: 'bg-blue-500 hover:bg-blue-600',
     },
   ];

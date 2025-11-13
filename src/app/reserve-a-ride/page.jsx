@@ -279,7 +279,7 @@ function ReserveForm() {
         <p className="mb-4">
           Need immediate assistance? Call us at{' '}
           <a
-            href="tel:+94762726459"
+            href="tel:+94756877595"
             className="text-primary-ocean font-semibold hover:underline"
           >
             +94 76 272 6459

@@ -135,10 +135,10 @@ export default function Contact() {
                       Email
                     </h3>
                     <a
-                      href="mailto:infas1002@gmail.com"
+                      href="mailto:app@test.com"
                       className="text-gray-600 hover:text-primary-ocean transition-colors"
                     >
-                      infas1002@gmail.com
+                      app@test.com
                     </a>
                   </div>
                 </motion.div>
@@ -158,7 +158,7 @@ export default function Contact() {
                       Phone
                     </h3>
                     <a
-                      href="tel:+94762726459"
+                      href="tel:+94756877595"
                       className="text-gray-600 hover:text-primary-ocean transition-colors"
                     >
                       +94 76 272 6459

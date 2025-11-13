@@ -87,7 +87,7 @@ export default function ImageCarousel() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <p className="text-xl md:text-3xl mb-8 drop-shadow-lg">
+            <p className="text-l sm:text-3xl mb-8 drop-shadow-lg">
               {slides[currentIndex].subtitle}
             </p>
           </motion.div>

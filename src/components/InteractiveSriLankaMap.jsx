@@ -270,7 +270,7 @@ export default function InteractiveSriLankaMap() {
       </div>
 
       {/* Map Container */}
-      <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-primary-gold/30 relative z-1">
+      <div className="rounded-2xl overflow-hidden border-4 border-primary-gold/30 relative z-1">
         <MapContainer
           center={sriLankaCenter}
           zoom={7}
@@ -364,7 +364,7 @@ export default function InteractiveSriLankaMap() {
         </MapContainer>
       </div>
       {/* Legend */}
-      <div className="mt-5 bg-white rounded-xl shadow-lg p-2 relative z-1 mb-5">
+      <div className="mt-2 flex flex-wrap justify-center">
         {/* <h3 className="text-xl font-bold text-primary-navy mb-4">Map Legend</h3> */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex items-center">
@@ -392,7 +392,7 @@ export default function InteractiveSriLankaMap() {
             <span className="text-sm font-medium">Nature & Wildlife</span>
           </div>
         </div>
-        <p className="text-sm text-gray-600">
+        <p className="flex items-center text-sm mt-2 text-gray-600 gap-2">
           💡 <strong>Tip:</strong> Click on any marker to see details and book a
           ride directly!
         </p>

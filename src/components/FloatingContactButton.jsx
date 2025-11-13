@@ -1,11 +1,17 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { FaComments, FaTimes, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa'
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import {
+  FaComments,
+  FaTimes,
+  FaWhatsapp,
+  FaEnvelope,
+  FaPhone,
+} from 'react-icons/fa';
 
 export default function FloatingContactButton() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const contactOptions = [
     {
@@ -26,7 +32,7 @@ export default function FloatingContactButton() {
       href: 'tel:+94762726459',
       color: 'bg-blue-500 hover:bg-blue-600',
     },
-  ]
+  ];
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
@@ -63,7 +69,9 @@ export default function FloatingContactButton() {
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
         className={`${
-          isOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-primary-ocean hover:bg-primary-blue'
+          isOpen
+            ? 'bg-red-500 hover:bg-red-600'
+            : 'bg-primary-ocean hover:bg-primary-blue'
         } text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center`}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
@@ -77,5 +85,5 @@ export default function FloatingContactButton() {
         </motion.span>
       </motion.button>
     </div>
-  )
+  );
 }

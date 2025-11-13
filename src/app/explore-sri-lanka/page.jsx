@@ -2,7 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+
+// Dynamically import the map component (fixes SSR issues)
+const InteractiveSriLankaMap = dynamic(
+  () => import('@/components/InteractiveSriLankaMap'),
+  { ssr: false }
+);
 
 export default function ExploreSriLanka() {
   const destinations = [
@@ -131,6 +138,32 @@ export default function ExploreSriLanka() {
         </motion.div>
       </section>
 
+      {/* Interactive Map Section */}
+      <section className="pt-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="section-title">🗺️ Interactive Destination Map</h2>
+            <p className="section-subtitle">
+              Click on any location to explore and book your ride instantly
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <InteractiveSriLankaMap />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Destinations Grid */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -140,9 +173,9 @@ export default function ExploreSriLanka() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="section-title">Must-Visit Destinations</h2>
+            <h2 className="section-title">All Destinations</h2>
             <p className="section-subtitle">
-              Experience the diverse beauty and rich culture of Sri Lanka
+              Detailed information about each amazing location
             </p>
           </motion.div>
 

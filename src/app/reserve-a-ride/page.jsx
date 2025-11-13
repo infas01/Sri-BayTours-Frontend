@@ -11,15 +11,18 @@ import {
   FaClock,
   FaCheckCircle,
 } from 'react-icons/fa';
+import { useSearchParams } from 'next/navigation';
 
 export default function ReserveARide() {
+  const searchParams = useSearchParams();
+  const destinationParam = searchParams.get('destination');
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
     contactNumber: '',
-    subject: '',
+    subject: destinationParam ? `Trip to ${destinationParam}` : '',
     pickupLocation: '',
-    dropoffLocation: '',
+    dropoffLocation: destinationParam || '',
     pickupDate: '',
     pickupTime: '',
   });

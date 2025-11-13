@@ -113,7 +113,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-2xl text-primary-navy"
+            className="lg:hidden text-2xl text-primary-navy sm:mr-5 mr-10"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <FaTimes /> : <FaBars />}

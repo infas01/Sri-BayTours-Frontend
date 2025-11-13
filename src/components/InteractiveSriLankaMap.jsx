@@ -106,7 +106,7 @@ export default function InteractiveSriLankaMap() {
       position: [6.3725, 81.5103],
       type: 'nature',
       description:
-        'https://images.unsplash.com/photo-1621847473222-d85c022cbf07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1325',
+        "Sri Lanka's most visited wildlife sanctuary, home to leopards, elephants, sloth bears, and diverse bird species in stunning natural landscapes.",
       image:
         'https://images.unsplash.com/photo-1578193661550-c7d0b7b3aa55?w=400&q=80',
       province: 'Southern Province',
@@ -152,7 +152,7 @@ export default function InteractiveSriLankaMap() {
       position: [7.9403, 81.0188],
       type: 'cultural',
       description:
-        'https://images.unsplash.com/photo-1709729519591-2fb2d25395df?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=765',
+        'Ancient capital city featuring well-preserved ruins of palaces, temples, and massive stone Buddha statues from the 11th century.',
       image:
         'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&q=80',
       province: 'North Central Province',

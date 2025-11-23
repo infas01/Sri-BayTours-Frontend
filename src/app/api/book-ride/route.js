@@ -123,7 +123,7 @@ export async function POST(request) {
                 <div class="footer">
                   <p><strong>Sri'BayTours</strong></p>
                   <p>Explore the Pearl of the Indian Ocean</p>
-                  <p>📍 Pottuvil, Sri Lanka | 📞 +94 76 272 6459</p>
+                  <p>📍 Pottuvil, Sri Lanka | 📞 +94 75 687 7595</p>
                 </div>
               </div>
             </div>

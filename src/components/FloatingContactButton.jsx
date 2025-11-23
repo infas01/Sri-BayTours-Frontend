@@ -23,7 +23,7 @@ export default function FloatingContactButton() {
     {
       icon: <FaEnvelope />,
       label: 'Email',
-      href: 'mailto:app@test.com',
+      href: 'mailto:info.sribaytour@gmail.com',
       color: 'bg-red-500 hover:bg-red-600',
     },
     {

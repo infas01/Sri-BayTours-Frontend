@@ -125,10 +125,10 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-primary-ocean flex-shrink-0" />
                 <a
-                  href="mailto:app@test.com"
+                  href="mailto:info.sribaytour@gmail.com"
                   className="text-gray-300 hover:text-primary-ocean transition-colors text-sm"
                 >
-                  app@test.com
+                  info.sribaytour@gmail.com
                 </a>
               </li>
             </ul>

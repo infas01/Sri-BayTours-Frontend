@@ -282,7 +282,7 @@ function ReserveForm() {
             href="tel:+94756877595"
             className="text-primary-ocean font-semibold hover:underline"
           >
-            +94 76 272 6459
+            +94 75 687 7595
           </a>
         </p>
         <p className="text-sm">

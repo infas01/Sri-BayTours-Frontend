@@ -39,8 +39,8 @@ export default function Navbar() {
     <nav
       className={`fixed w-full z-[100] transition-all duration-300 ${
         scrolled
-          ? 'bg-white shadow-lg py-2'
-          : 'bg-white/95 backdrop-blur-sm py-4'
+          ? 'bg-white shadow-lg py-3'
+          : 'bg-white/95 backdrop-blur-sm py-3'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -99,7 +99,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-2xl text-primary-navy sm:mr-5 mr-10"
+            className="lg:hidden text-2xl text-primary-navy mr-5"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >

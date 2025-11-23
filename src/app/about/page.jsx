@@ -33,7 +33,7 @@ export default function About() {
   ];
 
   return (
-    <div className="pt-24">
+    <div className="pt-24 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image

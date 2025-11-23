@@ -64,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-24 min-h-screen bg-gray-50">
+    <div className="pt-24 overflow-x-hidden min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-navy to-primary-blue text-white py-16">
         <div className="container mx-auto px-4 text-center">
@@ -135,10 +135,10 @@ export default function Contact() {
                       Email
                     </h3>
                     <a
-                      href="mailto:app@test.com"
+                      href="mailto:info.sribaytour@gmail.com"
                       className="text-gray-600 hover:text-primary-ocean transition-colors"
                     >
-                      app@test.com
+                      info.sribaytour@gmail.com
                     </a>
                   </div>
                 </motion.div>

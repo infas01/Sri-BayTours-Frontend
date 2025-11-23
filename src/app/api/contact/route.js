@@ -1,16 +1,16 @@
-import { Resend } from 'resend'
-import { NextResponse } from 'next/server'
+import { Resend } from 'resend';
+import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   try {
-    const body = await request.json()
-    const { name, email, phone, country, message } = body
+    const body = await request.json();
+    const { name, email, phone, country, message } = body;
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Sri\'BayTours <onboarding@resend.dev>', // Use your verified domain
+      from: "Sri'BayTours <onboarding@resend.dev>", // Use your verified domain
       to: [process.env.NEXT_PUBLIC_CONTACT_EMAIL],
       subject: `New Contact Form Submission from ${name}`,
       html: `
@@ -106,23 +106,29 @@ export async function POST(request) {
                 <div class="footer">
                   <p><strong>Sri'BayTours</strong></p>
                   <p>Explore the Pearl of the Indian Ocean</p>
-                  <p>📍 Pottuvil, Sri Lanka | 📞 +94 76 272 6459</p>
+                  <p>📍 Pottuvil, Sri Lanka | 📞 +94 75 687 7595</p>
                 </div>
               </div>
             </div>
           </body>
         </html>
       `,
-    })
+    });
 
     if (error) {
-      console.error('Resend error:', error)
-      return NextResponse.json({ error: 'Failed to send email' }, { status: 500 })
+      console.error('Resend error:', error);
+      return NextResponse.json(
+        { error: 'Failed to send email' },
+        { status: 500 }
+      );
     }
 
-    return NextResponse.json({ success: true, data }, { status: 200 })
+    return NextResponse.json({ success: true, data }, { status: 200 });
   } catch (error) {
-    console.error('API error:', error)
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+    console.error('API error:', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
   }
 }

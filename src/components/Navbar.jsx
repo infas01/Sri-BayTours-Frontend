@@ -56,7 +56,7 @@ export default function Navbar() {
                 className="cursor-pointer transition-transform duration-300 hover:scale-110"
               />
               <span className="ml-3 text-2xl font-bold text-primary-navy block">
-                Sri'BayTours
+                Sri&apos;BayTours
               </span>
             </div>
           </Link>

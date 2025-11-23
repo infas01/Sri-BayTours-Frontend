@@ -82,19 +82,20 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl font-bold text-primary-navy mb-6">
-                Welcome to Sri'BayTours
+                Welcome to Sri&apos;BayTours
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Discover the enchanting beauty of Sri Lanka with Sri'BayTours,
-                your trusted travel companion in the Pearl of the Indian Ocean.
-                Based in the stunning coastal town of Pottuvil, we specialize in
-                providing premium taxi services and unforgettable guided tours
-                across Sri Lanka's most breathtaking destinations.
+                Discover the enchanting beauty of Sri Lanka with
+                Sri&apos;BayTours, your trusted travel companion in the Pearl of
+                the Indian Ocean. Based in the stunning coastal town of
+                Pottuvil, we specialize in providing premium taxi services and
+                unforgettable guided tours across Sri Lanka&apos;s most
+                breathtaking destinations.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                Whether you're seeking pristine beaches, ancient cultural sites,
-                lush tea plantations, or thrilling wildlife encounters, our
-                experienced team is dedicated to creating personalized
+                Whether you&apos;re seeking pristine beaches, ancient cultural
+                sites, lush tea plantations, or thrilling wildlife encounters,
+                our experienced team is dedicated to creating personalized
                 experiences that showcase the very best of Sri Lankan
                 hospitality and natural wonder.
               </p>
@@ -115,10 +116,10 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="section-title">Why Choose Sri'BayTours?</h2>
+            <h2 className="section-title">Why Choose Sri&apos;BayTours?</h2>
             <p className="section-subtitle">
-              We're committed to providing exceptional service and unforgettable
-              experiences
+              We&apos;re committed to providing exceptional service and
+              unforgettable experiences
             </p>
           </motion.div>
 

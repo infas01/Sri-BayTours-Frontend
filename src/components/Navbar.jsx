@@ -49,10 +49,10 @@ export default function Navbar() {
           <Link href="/">
             <div className="flex items-center">
               <Image
-                src="/logo.png"
+                src="/logo-dark-1.png"
                 alt="Sri'BayTours Logo"
-                width={60}
-                height={60}
+                width={80}
+                height={80}
                 className="cursor-pointer transition-transform duration-300 hover:scale-110"
               />
               <span className="ml-3 text-2xl font-bold text-primary-navy block">

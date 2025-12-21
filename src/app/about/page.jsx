@@ -37,13 +37,13 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80"
+          src="/images/about-us-1.png"
           alt="About Sri'BayTours"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-primary-navy/60" />
+        <div className="absolute inset-0 bg-primary-navy/30" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -10,8 +10,7 @@ export default function ImageCarousel() {
 
   const slides = [
     {
-      image:
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80',
+      image: '/images/carousel-1.png',
       title: "Welcome to Sri'BayTours",
       subtitle: 'Explore the Pearl of the Indian Ocean',
     },
@@ -22,8 +21,7 @@ export default function ImageCarousel() {
       subtitle: 'Experience the beauty of Sri Lanka',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1920&q=80',
+      image: '/images/carousel-3.png',
       title: 'Your Journey Begins',
       subtitle: 'Premium taxi and tour services',
     },

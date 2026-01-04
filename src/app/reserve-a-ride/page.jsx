@@ -6,6 +6,7 @@ import {
   FaUser,
   FaEnvelope,
   FaPhone,
+  FaGlobe,
   FaMapMarkerAlt,
   FaCalendar,
   FaClock,
@@ -22,6 +23,7 @@ function ReserveForm() {
     fullName: '',
     email: '',
     contactNumber: '',
+    country: '',
     subject: destinationParam ? `Trip to ${destinationParam}` : '',
     pickupLocation: '',
     dropoffLocation: destinationParam || '',
@@ -58,6 +60,7 @@ function ReserveForm() {
           fullName: '',
           email: '',
           contactNumber: '',
+          country: '',
           subject: '',
           pickupLocation: '',
           dropoffLocation: '',
@@ -90,8 +93,8 @@ function ReserveForm() {
                 Booking Successful!
               </h3>
               <p className="text-green-700">
-                Thank you for your booking. We've received your request and will
-                contact you shortly to confirm your reservation.
+                Thank you for your booking. We&apos;ve received your request and
+                will contact you shortly to confirm your reservation.
               </p>
             </div>
           </motion.div>
@@ -167,6 +170,24 @@ function ReserveForm() {
               required
               className="input-field"
               placeholder="+94 XXX XXX XXX"
+            />
+          </div>
+
+          {/* Country */}
+          <div>
+            <label htmlFor="country" className="label">
+              <FaGlobe className="inline mr-2 text-primary-ocean" />
+              Country *
+            </label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+              required
+              className="input-field"
+              placeholder="Enter your country"
             />
           </div>
 

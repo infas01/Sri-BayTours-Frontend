@@ -10,6 +10,7 @@ export async function POST(request) {
       fullName,
       email,
       contactNumber,
+      country,
       subject,
       pickupLocation,
       dropoffLocation,
@@ -93,6 +94,11 @@ export async function POST(request) {
                 <div class="info-row">
                   <span class="label">Contact Number:</span>
                   <span>${contactNumber}</span>
+                </div>
+
+                <div class="info-row">
+                  <span class="label">Country:</span>
+                  <span>${country}</span>
                 </div>
                 
                 <div class="info-row">

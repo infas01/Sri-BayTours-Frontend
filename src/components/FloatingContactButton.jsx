@@ -17,19 +17,19 @@ export default function FloatingContactButton() {
     {
       icon: <FaWhatsapp />,
       label: 'WhatsApp',
-      href: `https://wa.me/94756877595`,
+      href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP}`,
       color: 'bg-green-500 hover:bg-green-600',
     },
     {
       icon: <FaEnvelope />,
       label: 'Email',
-      href: 'mailto:info.sribaytour@gmail.com',
+      href: `mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`,
       color: 'bg-red-500 hover:bg-red-600',
     },
     {
       icon: <FaPhone />,
       label: 'Phone',
-      href: 'tel:+94756877595',
+      href: `tel:${process.env.NEXT_PUBLIC_PHONE}`,
       color: 'bg-blue-500 hover:bg-blue-600',
     },
   ];

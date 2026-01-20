@@ -45,10 +45,10 @@ export default function InteractiveSriLankaMap() {
   // Sri Lanka center coordinates
   const sriLankaCenter = [7.8731, 80.7718];
 
-  // Your base location - Pottuvil
-  const pottuvil = {
-    name: 'Pottuvil - Our Home Base',
-    position: [6.8706, 81.8364],
+  // Your base location - Arugam Bay
+  const arugamBay = {
+    name: 'Arugam Bay - Our Home Base',
+    position: [6.8414, 81.8361],
     type: 'base',
     description: "Sri'BayTours headquarters",
   };
@@ -283,15 +283,15 @@ export default function InteractiveSriLankaMap() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {/* Home Base - Pottuvil */}
-          <Marker position={pottuvil.position} icon={createIcon('base')}>
+          {/* Home Base - arugamBay */}
+          <Marker position={arugamBay.position} icon={createIcon('base')}>
             <Popup className="custom-popup">
               <div className="p-4 min-w-[280px]">
                 <h3 className="text-xl font-bold text-primary-navy mb-2 flex items-center">
                   <span className="text-2xl mr-2">⭐</span>
-                  {pottuvil.name}
+                  {arugamBay.name}
                 </h3>
-                <p className="text-gray-600 mb-4">{pottuvil.description}</p>
+                <p className="text-gray-600 mb-4">{arugamBay.description}</p>
                 <Link href="/contact">
                   <button className="w-full bg-primary-gold hover:bg-primary-gold/90 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300">
                     Contact Us
@@ -301,9 +301,9 @@ export default function InteractiveSriLankaMap() {
             </Popup>
           </Marker>
 
-          {/* Service Coverage Circle around Pottuvil */}
+          {/* Service Coverage Circle around arugamBay */}
           {/* <Circle
-            center={pottuvil.position}
+            center={arugamBay.position}
             radius={400000}
             pathOptions={{
               color: '#d4a574',

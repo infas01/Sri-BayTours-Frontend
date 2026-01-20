@@ -300,10 +300,10 @@ function ReserveForm() {
         <p className="mb-4">
           Need immediate assistance? Call us at{' '}
           <a
-            href="tel:+94756877595"
+            href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
             className="text-primary-ocean font-semibold hover:underline"
           >
-            +94 75 687 7595
+            {process.env.NEXT_PUBLIC_PHONE_ARRANGED}
           </a>
         </p>
         <p className="text-sm">

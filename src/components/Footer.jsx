@@ -110,7 +110,7 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-primary-ocean mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  {process.env.NEXT_PUBLIC_CONTACT_EMAIL}
+                  {process.env.NEXT_PUBLIC_ADDRESS}
                 </span>
               </li>
               <li className="flex items-center space-x-3">

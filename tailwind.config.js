@@ -11,7 +11,7 @@ module.exports = {
         primary: {
           navy: '#1e3a5f',
           blue: '#4a90e2',
-          gold: '#d4a574',
+          gold: '#c88c4d',
           ocean: '#5eb3d6',
         },
       },

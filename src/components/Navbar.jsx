@@ -87,8 +87,8 @@ export default function Navbar() {
                 <button
                   className={`transition-all duration-300 font-semibold py-3 px-6 rounded-lg shadow-lg ${
                     isActive('/reserve-a-ride')
-                      ? 'bg-primary-navy/90 text-white scale-105'
-                      : 'btn-secondary'
+                      ? 'bg-primary-gold/90 text-white scale-105'
+                      : 'btn-primary'
                   }`}
                 >
                   Reserve a Ride
@@ -134,8 +134,8 @@ export default function Navbar() {
               <button
                 className={`w-full mt-4 transition-all duration-300 font-semibold py-3 px-6 rounded-lg shadow-lg ${
                   isActive('/reserve-a-ride')
-                    ? 'bg-primary-navy/90 text-white'
-                    : 'btn-secondary'
+                    ? 'bg-primary-gold/90 text-white'
+                    : 'btn-primary'
                 }`}
               >
                 Reserve a Ride

@@ -95,7 +95,7 @@ export default function ImageCarousel() {
             transition={{ duration: 2, delay: 0.6 }}
           >
             <a href="/reserve-a-ride">
-              <button className="btn-secondary">
+              <button className="btn-primary text-lg px-8 py-4">
                 Book Your Journey
               </button>
             </a>

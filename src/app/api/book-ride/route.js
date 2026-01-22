@@ -21,8 +21,9 @@ export async function POST(request) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: "Sri'BayTours <onboarding@resend.dev>", // Use your verified domain
+      from: "Sri'BayTours <info@sribaytours.lk>",
       to: [process.env.NEXT_PUBLIC_CONTACT_EMAIL],
+      reply_to: email,
       subject: `New Ride Booking: ${subject}`,
       html: `
         <!DOCTYPE html>
@@ -130,7 +131,7 @@ export async function POST(request) {
                 <div class="footer">
                   <p><strong>Sri'BayTours</strong></p>
                   <p>Explore the Pearl of the Indian Ocean</p>
-                  <p>📍 Pottuvil, Sri Lanka | 📞 +94 75 687 7595</p>
+                  <p>📍 ${process.env.NEXT_PUBLIC_ADDRESS} | 📞 ${process.env.NEXT_PUBLIC_PHONE_ARRANGED}</p>
                 </div>
               </div>
             </div>

@@ -61,12 +61,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d4a574;
+  background: #ce9861;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c89564;
+  background: #c88c4d;
 }
 
 /* Custom Leaflet Popup Styles */

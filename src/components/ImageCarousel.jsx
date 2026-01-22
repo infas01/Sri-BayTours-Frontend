@@ -45,7 +45,7 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -73,7 +73,7 @@ export default function ImageCarousel() {
             key={`title-${currentIndex}`}
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 2, delay: 0.2 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl">
               {slides[currentIndex].title}
@@ -83,7 +83,7 @@ export default function ImageCarousel() {
             key={`subtitle-${currentIndex}`}
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 2, delay: 0.4 }}
           >
             <p className="text-l sm:text-3xl mb-8 drop-shadow-lg">
               {slides[currentIndex].subtitle}
@@ -92,7 +92,7 @@ export default function ImageCarousel() {
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 2, delay: 0.6 }}
           >
             <a href="/reserve-a-ride">
               <button className="btn-primary text-lg px-8 py-4">

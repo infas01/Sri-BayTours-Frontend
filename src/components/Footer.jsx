@@ -110,25 +110,25 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-primary-ocean mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  Pottuvil, Sri Lanka
+                  {process.env.NEXT_PUBLIC_ADDRESS}
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaPhone className="text-primary-ocean flex-shrink-0" />
                 <a
-                  href="tel:+94756877595"
+                  href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
                   className="text-gray-300 hover:text-primary-ocean transition-colors text-sm"
                 >
-                  +94 75 687 7595
+                  {process.env.NEXT_PUBLIC_PHONE_ARRANGED}
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-primary-ocean flex-shrink-0" />
                 <a
-                  href="mailto:info.sribaytour@gmail.com"
+                  href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`}
                   className="text-gray-300 hover:text-primary-ocean transition-colors text-sm"
                 >
-                  info.sribaytour@gmail.com
+                  {process.env.NEXT_PUBLIC_CONTACT_EMAIL}
                 </a>
               </li>
             </ul>

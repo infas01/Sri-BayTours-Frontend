@@ -116,7 +116,9 @@ export default function Contact() {
                     <h3 className="text-xl font-semibold text-primary-navy mb-2">
                       Address
                     </h3>
-                    <p className="text-gray-600">Pottuvil, Sri Lanka</p>
+                    <p className="text-gray-600">
+                      {process.env.NEXT_PUBLIC_ADDRESS}
+                    </p>
                   </div>
                 </motion.div>
 
@@ -135,10 +137,10 @@ export default function Contact() {
                       Email
                     </h3>
                     <a
-                      href="mailto:info.sribaytour@gmail.com"
+                      href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`}
                       className="text-gray-600 hover:text-primary-ocean transition-colors"
                     >
-                      info.sribaytour@gmail.com
+                      {process.env.NEXT_PUBLIC_CONTACT_EMAIL}
                     </a>
                   </div>
                 </motion.div>
@@ -158,10 +160,10 @@ export default function Contact() {
                       Phone
                     </h3>
                     <a
-                      href="tel:+94756877595"
+                      href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
                       className="text-gray-600 hover:text-primary-ocean transition-colors"
                     >
-                      +94 75 687 7595
+                      {process.env.NEXT_PUBLIC_PHONE_ARRANGED}
                     </a>
                   </div>
                 </motion.div>

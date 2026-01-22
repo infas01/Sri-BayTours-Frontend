@@ -100,7 +100,7 @@ export default function Home() {
                 hospitality and natural wonder.
               </p>
               <Link href="/about">
-                <button className="btn-secondary">Read More About Us</button>
+                <button className="btn-primary">Read More About Us</button>
               </Link>
             </motion.div>
           </div>

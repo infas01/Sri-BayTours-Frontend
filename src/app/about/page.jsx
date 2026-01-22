@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaHeart, FaUsers, FaAward, FaLeaf } from 'react-icons/fa';
 
 export default function About() {
@@ -234,11 +235,11 @@ export default function About() {
               Join thousands of satisfied travelers who have explored Sri Lanka
               with us
             </p>
-            <a href="/reserve-a-ride">
+            <Link href="/reserve-a-ride">
               <button className="btn-primary text-lg px-10 py-4">
                 Start Your Journey
               </button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

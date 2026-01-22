@@ -108,7 +108,7 @@ export async function POST(request) {
                 <div class="footer">
                   <p><strong>Sri'BayTours</strong></p>
                   <p>Explore the Pearl of the Indian Ocean</p>
-                  <p>📍${process.env.NEXT_PUBLIC_ADDRESS} | 📞 ${process.env.NEXT_PUBLIC_PHONE_ARRANGED}</p>
+                  <p>📍 ${process.env.NEXT_PUBLIC_ADDRESS} | 📞 ${process.env.NEXT_PUBLIC_PHONE_ARRANGED}</p>
                 </div>
               </div>
             </div>

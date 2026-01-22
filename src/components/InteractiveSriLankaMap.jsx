@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Import Leaflet CSS and fix icon issue
 if (typeof window !== 'undefined') {
@@ -46,12 +47,12 @@ export default function InteractiveSriLankaMap() {
   const sriLankaCenter = [7.8731, 80.7718];
 
   // Your base location - Arugam Bay
-  const arugamBay = {
-    name: 'Arugam Bay - Our Home Base',
-    position: [6.8414, 81.8361],
-    type: 'base',
-    description: "Sri'BayTours headquarters",
-  };
+  // const arugamBay = {
+  //   name: 'Arugam Bay - Our Home Base',
+  //   position: [6.8414, 81.8361],
+  //   type: 'base',
+  //   description: "Sri'BayTours headquarters",
+  // };
 
   // All 12 destinations with coordinates
   const destinations = [
@@ -108,7 +109,7 @@ export default function InteractiveSriLankaMap() {
       description:
         "Sri Lanka's most visited wildlife sanctuary, home to leopards, elephants, sloth bears, and diverse bird species in stunning natural landscapes.",
       image:
-        'https://images.unsplash.com/photo-1578193661550-c7d0b7b3aa55?w=400&q=80',
+        'https://images.unsplash.com/photo-1566708627877-859df13ae63e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       province: 'Southern Province',
       distance: '90 km',
       duration: '2 hours',
@@ -125,15 +126,15 @@ export default function InteractiveSriLankaMap() {
       duration: '3 hours',
     },
     {
-      name: 'Arugam Bay',
+      name: "Arugam Bay - Sri'BayTours headquarters",
       position: [6.8414, 81.8361],
-      type: 'beach',
+      type: 'base',
       description: 'World-renowned surfing destination with perfect waves',
       image:
         'https://images.unsplash.com/photo-1552055568-f8c4fb8c6320?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       province: 'Eastern Province',
-      distance: '5 km',
-      duration: '15 minutes',
+      distance: '2 km',
+      duration: '10 minutes',
     },
     {
       name: 'Nuwara Eliya',
@@ -154,7 +155,7 @@ export default function InteractiveSriLankaMap() {
       description:
         'Ancient capital city featuring well-preserved ruins of palaces, temples, and massive stone Buddha statues from the 11th century.',
       image:
-        'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&q=80',
+        'https://images.unsplash.com/photo-1709729508706-87741ec2d50a?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       province: 'North Central Province',
       distance: '140 km',
       duration: '3 hours',
@@ -284,7 +285,7 @@ export default function InteractiveSriLankaMap() {
           />
 
           {/* Home Base - arugamBay */}
-          <Marker position={arugamBay.position} icon={createIcon('base')}>
+          {/* <Marker position={arugamBay.position} icon={createIcon('base')}>
             <Popup className="custom-popup">
               <div className="p-4 min-w-[280px]">
                 <h3 className="text-xl font-bold text-primary-navy mb-2 flex items-center">
@@ -299,7 +300,7 @@ export default function InteractiveSriLankaMap() {
                 </Link>
               </div>
             </Popup>
-          </Marker>
+          </Marker> */}
 
           {/* Service Coverage Circle around arugamBay */}
           {/* <Circle
@@ -324,10 +325,11 @@ export default function InteractiveSriLankaMap() {
               <Popup className="custom-popup" maxWidth={320}>
                 <div className="p-2">
                   <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
-                    <img
+                    <Image
                       src={destination.image}
                       alt={destination.name}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                   <h3 className="text-lg font-bold text-primary-navy mb-2">

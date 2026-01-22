@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import Link from 'next/link';
 
 // Dynamically import the map component (fixes SSR issues)
 const InteractiveSriLankaMap = dynamic(
@@ -234,11 +235,11 @@ export default function ExploreSriLanka() {
               Let us take you on an unforgettable journey across Sri Lanka's
               most beautiful locations
             </p>
-            <a href="/reserve-a-ride">
+            <Link href="/reserve-a-ride">
               <button className="btn-primary text-lg px-10 py-4">
                 Book Your Tour Now
               </button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

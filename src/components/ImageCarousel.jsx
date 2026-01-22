@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -94,11 +95,11 @@ export default function ImageCarousel() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 2, delay: 0.6 }}
           >
-            <a href="/reserve-a-ride">
+            <Link href="/reserve-a-ride">
               <button className="btn-primary text-lg px-8 py-4">
                 Book Your Journey
               </button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function ImageCarousel() {
 
   const slides = [
     {
-      image: '/images/carousel-1.png',
+      image: '/images/carousel-1.webp',
       title: "Welcome to Sri'BayTours",
       subtitle: 'Explore the Pearl of the Indian Ocean',
     },
@@ -22,7 +22,7 @@ export default function ImageCarousel() {
       subtitle: 'Experience the beauty of Sri Lanka',
     },
     {
-      image: '/images/carousel-3.png',
+      image: '/images/carousel-3.webp',
       title: 'Your Journey Begins',
       subtitle: 'Premium taxi and tour services',
     },
@@ -37,7 +37,7 @@ export default function ImageCarousel() {
 
   const goToPrevious = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length,
     );
   };
 

@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "Sri'BayTours",
     images: [
       {
-        url: '/images/carousel-1.png',
+        url: 'https://images.unsplash.com/photo-1552055568-f8c4fb8c6320?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         width: 1200,
         height: 630,
       },

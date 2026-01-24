@@ -38,7 +38,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/about-us-1.png"
+          src="/images/about-us-1.webp"
           alt="About Sri'BayTours"
           fill
           className="object-cover"

@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="animate-fade-in">
             <Image
-              src="/logo-white-1.png"
+              src="/logo-white-1.webp"
               alt="Sri'BayTours Logo"
               width={80}
               height={80}

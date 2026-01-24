@@ -49,7 +49,7 @@ export default function Navbar() {
           <Link href="/">
             <div className="flex items-center">
               <Image
-                src="/logo-dark-1.png"
+                src="/logo-dark-1.webp"
                 alt="Sri'BayTours Logo"
                 width={80}
                 height={80}

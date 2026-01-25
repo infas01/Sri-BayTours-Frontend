@@ -11,6 +11,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sribaytours.lk',
+  ),
   title: "Sri'BayTours | Taxi Service & Tours in Sri Lanka",
   description:
     'Book affordable taxi rides, airport transfers, and tours in Arugam Bay, Ella, and Sigiriya. Trusted driver in Sri Lanka.',
@@ -22,6 +25,20 @@ export const metadata = {
     'tourist destinations',
     'Sribaytours',
   ],
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
 
   openGraph: {
     title: "Sri'BayTours | Taxi Service & Tours in Sri Lanka",
@@ -37,6 +54,14 @@ export const metadata = {
     ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Sri'BayTours | Taxi Service & Tours in Sri Lanka",
+    description: 'Book affordable taxi rides and tours in Arugam Bay.',
+    images: [
+      'https://images.unsplash.com/photo-1552055568-f8c4fb8c6320?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    ],
   },
 };
 

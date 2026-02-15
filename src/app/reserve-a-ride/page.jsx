@@ -307,8 +307,7 @@ function ReserveForm() {
           </a>
         </p>
         <p className="text-sm">
-          We typically respond within 1-2 hours during business hours (8 AM - 8
-          PM)
+          We typically respond within 1-2 hours during business hours (24/7 Service Available)
         </p>
       </div>
     </div>
